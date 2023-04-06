@@ -61,7 +61,7 @@ button{
 @media only screen and (max-width: 750px)  {
 
     body{
-        background: url(/Images/backgrounds/Mobile/similar\ one.jpg);
+        background: url(Images/backgrounds/Mobile/similar\ one.jpg);
         background-size: cover;
     }
     
