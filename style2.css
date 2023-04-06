@@ -8,8 +8,8 @@
 
 body{
     padding: 150px;
-    background: url(ankit.jpg);
-    background-size: aut;
+    background: url(Images/backgrounds/newone.jpg);
+    background-size: cover;
 }
 
 
