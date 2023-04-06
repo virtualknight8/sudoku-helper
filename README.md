@@ -1,4 +1,4 @@
-# Sudoku Solver with Tricks in JavaScript
+# Sudoku Solver with Tricks in JavaScript habibi
 
 This is a Sudoku solver written in JavaScript that can solve any valid Sudoku puzzle. The solver uses Sudoku tricks such as obvious singles, doubles and triples, and hidden singles and doubles to find the solution.
 
