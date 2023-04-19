@@ -1,57 +1,89 @@
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
 }
-html{
-  background: url(/Images/backgrounds/leisure-time-g6dab9cb11_1920.jpg);
-  font-family: 'Outfit', sans-serif;
-}
+
+
 body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-}
-
-.title{
-  text-align: center;
-  margin-top: 30px;
-  color: white;
-  font-size: 50px;
-  font-weight: 500;
-  color: blue;
-}
-
-#grid {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(9, auto);
-  grid-template-rows: repeat(9, auto);
-  width: fit-content;
-  border: 1px black solid;
-  margin-top: 20px;
-  background-color:blueviolet;
-}
-#grid * {
-  border: 0.1px solid black;
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
-  display: grid;
-  place-items: center;
-  
+    padding: 150px;
+    background: url(Images/backgrounds/newone-min.jpg);
+    background-size: cover;
 }
 
 
-button {
-  display: block;
-  margin-top: 30px;
-  padding: 10px 30px;
-  background-color: #2825cc;
-  color: white;
-  font-size: 20px;
-  border-radius: 10px;
-  order: 3;
-  font-family: 'Chakra Petch', sans-serif;
+h1{
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+p{
+    color: #c3c9f7;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#btn1{
+    background-color: aquamarine; 
+    margin-top: 30px;
+}
+
+#btn2{
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+#flink:link,#flink:visited{
+    color: black;
+}
+#btn2 a{
+    color: white;
+}
+
+img{
+    height: 20px;
+    margin-left: 10px;
+}
+button{
+    padding: 13px 20px;
+    
+    border-radius: 30px;
+    font-size: large;
+}
+
+@media only screen and (max-width: 750px)  {
+
+    body{
+        background: url(Images/backgrounds/Mobile/nowcompressed.jpg);
+        background-size: cover;
+        padding:150px 40px 0;
+    }
+    
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    #btn1{
+        margin: 20px auto;
+        display: block;
+    }
+
+    #btn2{
+        display: block;
+        margin: 20px auto;
+    }
+
+    
 }
