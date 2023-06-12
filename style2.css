@@ -1,0 +1,212 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Anuphan', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #191825;
+	font-size: 50px;
+}
+
+body {
+	padding: 80px 50px;
+	background: #222831;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	/* width: 100vw; */
+	padding: 0 10px;
+	justify-content: space-evenly;
+}
+.container > * {
+	margin-top: 10px;
+}
+
+.section {
+	margin: 10px 0;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+
+#keyboard > button {
+	background-color: black;
+	font-size: 20px;
+	max-width: 50px;
+	max-height: 50px;
+	width: 9vw;
+	height: 8vw;
+	margin: 3px;
+	float: left;
+	border-radius: 5px;
+	color: #00adb5;
+	border: none;
+}
+
+.container2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+#nid.active {
+	background-color: black;
+	color: #00adb5;
+}
+.menu > button {
+	background-color: #00adb5;
+	padding: 15px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-family: 'Anuphan', sans-serif;
+	font-size: 20px;
+	margin: 5px;
+}
+
+#keyboard > button:nth-child(10) {
+	max-width: 90px;
+	width: 30vw;
+}
+
+#keyboard {
+	width: 168px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#grid {
+	width: fit-content;
+	display: grid;
+	grid-template-columns: repeat(9, auto);
+	grid-template-rows: repeat(9, auto);
+	border-radius: 10px;
+
+	color: #000000;
+	background-color: #e2e5ea;
+}
+#card1 {
+	z-index: 2;
+	position: absolute;
+	color: white;
+	border: 2px solid #00adb5;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #000000;
+	width: 500px;
+	height: 300px;
+	font-size: large;
+	padding: 20px;
+	bottom: 200px;
+	left: 170px;
+}
+
+#nxtbtn {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding: 5px;
+	font-size: medium;
+	background-color: #00adb5;
+}
+
+#grid * {
+	border: 1px solid black;
+	max-width: 50px;
+	max-height: 50px;
+	width: 10vw;
+	height: 10vw;
+	display: grid;
+	padding: 5px;
+}
+
+#keyboard button.active {
+	border: 2px solid #00adb5;
+}
+
+#grid > div:nth-child(9n + 1) {
+	border-left: none;
+}
+
+#grid > div:nth-child(9n) {
+	border-right: none;
+}
+
+#grid > div:nth-child(-n + 9) {
+	border-top: none;
+}
+
+#grid > div:nth-last-child(-n + 9) {
+	border-bottom: none;
+}
+
+.btn {
+	display: block;
+	margin: 10px auto;
+}
+.empty {
+	font-size: 9px;
+	font-weight: 800;
+}
+
+.filled {
+	place-items: center;
+	font-size: 25px;
+}
+.incorrect {
+	color: red;
+}
+.correct {
+	color: green;
+}
+
+.hinted {
+	background-color: aqua;
+}
+
+.selected {
+	background-color: rgb(110, 110, 109);
+}
+
+.shadowed {
+	background: #fff;
+}
+
+#hint {
+	text-align: center;
+	color: white;
+	height: auto;
+	max-width: 300px;
+	padding: 20px;
+	background: black;
+	font-size: 20px;
+	border: 2px solid #00adb5;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+	.container {
+		flex-direction: row;
+	}
+
+	#keyboard {
+		width: 100%;
+		flex-direction: row;
+	}
+	#card1 {
+		left: 0;
+	}
+}
