@@ -1,6 +1,6 @@
-# Sudoku Solver with Tricks in JavaScript
+# Sudoku Helper with Hints in JavaScript
 
-This is a Sudoku solver written in JavaScript that can solve any valid Sudoku puzzle. The solver uses Sudoku tricks such as obvious singles, doubles and triples, and hidden singles and doubles to find the solution.
+This is a Sudoku helper written in JavaScript that can help you solve any valid Sudoku puzzle. The solver uses Sudoku tricks such as obvious singles, doubles and triples, and hidden singles and doubles to help you find the solution.
 
 ## Getting Started
 
@@ -9,12 +9,9 @@ To use this Sudoku solver, follow these steps:
 1. Clone the repository or download the source code.
 2. Open the `index.html` file in your web browser.
 3. Enter the Sudoku puzzle you want to solve in the input fields or go to https://virtualknight8.github.io/sudoku-solver/.
-4. Click the "Solve" button to solve the puzzle.
-5. If a solution exists, it will be displayed on the page.
-
-## How it Works
-
-The Sudoku solver first applies the Sudoku tricks to fill in as many cells as possible. If it can't fill in any more cells, it stops and displays the result. If there are still empty cells, it applies the tricks again, and repeats until no more cells can be filled in. If there are still empty cells, the solver declares the puzzle unsolvable.
+4. Click the Hint button to get the most possibly valid value for the cells chosen algorithmically by the program.
+5. Click the Notes Button to see all possible values that are valid for each and every blank cells. The values change dynamically as you enter your own.
+6. Click the New Game Button to get an entirely new puzzle set generated randomly by the algorithm.
 
 The Sudoku tricks used by the solver are:
 
